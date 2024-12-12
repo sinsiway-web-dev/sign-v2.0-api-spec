@@ -91,6 +91,7 @@
 |[근거 문서 파일 업로드](./doc-create/groundsDoc.md/#근거-문서-파일-업로드)|/api/sign/doc/dataModify/groundsDoc/|POST|이미지(jpg) 파일 업로드|
 |[근거 문서 별 결재 문서 조회](./doc-create/groundsDoc.md/#근거-문서-별-결재-문서-조회)|/api/sign/doc/dataModify/groundsDoc/doc|GET|근거 문서 선택 목록|
 |[근거 문서 상태 조회 URL](./doc-create/groundsDoc.md/#근거-문서-상태-조회-URL)|/api/sign/doc/dataModify/groundsDoc/status|GET|근거 문서 선택 목록|
+|[근거 문서 종류 조회](./doc-create/groundsDoc.md#근거-문서-종류-조회)|/api/sign/doc/dataModify/groundsDoc/type|GET|근거 문서 종류 조회|
 ## 승인 요청
 |API|URL|HTTP Method|View|
 |---|---|---|---|
