@@ -187,7 +187,8 @@ form-data; orgUid="u1"; file="img.jpg"
 
 
 # 근거 문서 상태 조회 URL
-URL 호출을 통해 근거 문서 상태 정보를 조회합니다.
+URL 호출을 통해 근거 문서 상태 정보를 조회합니다.<br>
+URL의 쿼리스트링은 URL Encoding 되어 있어야 합니다.
 ## URL
 * /api/sign/doc/dataModify/groundsDoc/status
 * GET
@@ -195,10 +196,12 @@ URL 호출을 통해 근거 문서 상태 정보를 조회합니다.
 ## Request
 |항목|값(예시)|타입|설명|
 |---|---|---|---|
+|*method | POST | String |근거 문서 상태 조회 API HTTP 메소드|
 |*url|http://1.1.1.1/sign/groundsDoc/status|String|근거 문서 상태 조회 URL|
 |*key|status|String|근거 문서 상태 키<br>고객사에서 사용하는 값|
 ```json
 {
+	"method": "POST",
 	"url": "http://1.1.1.1:8080/sign/groundsDoc/status",
 	"key": "status"
 }
