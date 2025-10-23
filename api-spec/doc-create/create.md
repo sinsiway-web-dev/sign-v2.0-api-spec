@@ -61,6 +61,7 @@ DB 데이터 변경 요청서 작성 시 DB 데이터 변경 SQL 제약 조건�
 |approveOrder|1|int|결재 순서|
 |approvePowerType|0|int|결재 권한 종류<br/>0 : 결재<br/>1 : DB데이터변경실행|
 |approverOrgUid|m01|String|결재자 ID|
+|approverName|김철수|String|결재자 이름<br>*현대카드/캐피탈 전용. main 버전에서는 사용되지 않음 |
 |executant|dba01|String|실행자 ID|
 |aprvLimit|2021/05/05|String|결재 기한|
 |docTitle|\[변경\] DB데이터변경|String|문서 제목|
