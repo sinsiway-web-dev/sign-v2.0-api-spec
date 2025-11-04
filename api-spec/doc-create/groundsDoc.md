@@ -246,7 +246,7 @@ groundsDocId=CA89-57E456C-144849
 |항목|값(예시)|타입|설명|
 |---|---|---|---|
 |code|200|int|결과 코드|
-|messageCode|200|int|결과 메시지 코드|
+|messageCode|200|int|결과 메시지 코드<br>-1060:근거 문서 중복 |
 |serverMessage|success|String|서버용 결과 메시지|
 |clientMessage|처리되었습니다.|String|클라이언트용 결과 메시지|
 |data||Map|결과 데이터|
@@ -259,6 +259,19 @@ groundsDocId=CA89-57E456C-144849
     "serverMessage": "success",
     "data": {
         "groundsDocType": 2
+    }
+}
+```
+
+[근거 문서 중복 응답]
+```json
+{
+    "code": 500,
+    "messageCode": -1060,
+    "clientMessage": "동일한 근거 문서로 요청된 중복 문서가 존재합니다.",
+    "serverMessage": "Duplicate documents have been submitted based on the same reference document.",
+    "data": {
+        "groundsDocType": -2
     }
 }
 ```
