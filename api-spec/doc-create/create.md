@@ -57,11 +57,12 @@ DB 데이터 변경 요청서 작성 시 DB 데이터 변경 SQL 제약 조건�
 |---|---|---|---|
 |selectBeforeDataCountFlag|false|boolean|변경 전 데이터 조회 여부<br/>true : 조회<br/>false : 조회 안함|
 |orgUid|u01|String|기안자 ID|
+|requestName|홍길동|String|기안자 이름<br>*현대카드/캐피탈 전용. main 버전에서는 사용되지 않음 <br> 최대 길이 10자 |
 |apvLineApprover||Array|결재자 목록|
 |approveOrder|1|int|결재 순서|
 |approvePowerType|0|int|결재 권한 종류<br/>0 : 결재<br/>1 : DB데이터변경실행|
 |approverOrgUid|m01|String|결재자 ID|
-|approverName|김철수|String|결재자 이름<br>*현대카드/캐피탈 전용. main 버전에서는 사용되지 않음 |
+|approverName|김철수|String|결재자 이름<br>*현대카드/캐피탈 전용. main 버전에서는 사용되지 않음 <br> 최대 길이 10자 |
 |executant|dba01|String|실행자 ID|
 |aprvLimit|2021/05/05|String|결재 기한|
 |docTitle|\[변경\] DB데이터변경|String|문서 제목|
@@ -77,6 +78,7 @@ DB 데이터 변경 요청서 작성 시 DB 데이터 변경 SQL 제약 조건�
 {
     "selectBeforeDataCountFlag": false,
     "orgUid": "u01",
+    "requestName": "u01",
     "apvLineApprover": [
         {
             "approveOrder": 1,
