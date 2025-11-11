@@ -227,10 +227,10 @@ URL의 쿼리스트링은 URL Encoding 되어 있어야 합니다.
 }
 ```
 
-# 근거 문서 종류 조회
-근거 문서 번호로 근거 문서의 종류를 조회합니다. 고객사별로 차이가 있을 수 있습니다.
+# 문서에 등록된 근거 문서 종류 조회
+문서에 등록된 근거 문서 종류를 조회합니다. 고객사별로 차이가 있을 수 있습니다.
 <br>[고객사 별 근거 문서 종류]
-- [현대카드] 1: 일반 협조전, 2: 클라우드 협조전
+- [현대카드] 1: 일반 협조전, 2: 클라우드 협조전, 0: 문서가 없거나 근거 문서 등록되지 않음
 ## URL
 * /api/sign/doc/dataModify/groundsDoc/type
 * GET
@@ -238,15 +238,15 @@ URL의 쿼리스트링은 URL Encoding 되어 있어야 합니다.
 ## Request
 |항목|값(예시)|타입|설명|
 |---|---|---|---|
-|*groundsDocId|CA89-57E456C-144849|String|근거 문서 번호|
+|*docId|2025000005|String|문서 번호|
 ```text
-groundsDocId=CA89-57E456C-144849
+?docId=2025000002
 ```
 ## Response
 |항목|값(예시)|타입|설명|
 |---|---|---|---|
 |code|200|int|결과 코드|
-|messageCode|200|int|결과 메시지 코드<br>-1060:근거 문서 중복 |
+|messageCode|200|int|결과 메시지 코드 |
 |serverMessage|success|String|서버용 결과 메시지|
 |clientMessage|처리되었습니다.|String|클라이언트용 결과 메시지|
 |data||Map|결과 데이터|
@@ -259,19 +259,6 @@ groundsDocId=CA89-57E456C-144849
     "serverMessage": "success",
     "data": {
         "groundsDocType": 2
-    }
-}
-```
-
-[근거 문서 중복 응답]
-```json
-{
-    "code": 500,
-    "messageCode": -1060,
-    "clientMessage": "동일한 근거 문서로 요청된 중복 문서가 존재합니다.",
-    "serverMessage": "Duplicate documents have been submitted based on the same reference document.",
-    "data": {
-        "groundsDocType": -2
     }
 }
 ```
