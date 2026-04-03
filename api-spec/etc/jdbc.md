@@ -11,8 +11,9 @@
 |*jdbcUrl|jdbc:oracle:thin:@192.168.10.110:1522:prod|String|JDBC URL|
 |*dbAccount|hr|String|DB 계정|
 |*dbPassword|hr|String|DB 비밀번호|
+|version|5|String|변경 대상 버전|
 ```
-?dbType=11&jdbcUrl=jdbc:oracle:thin:@192.168.10.110:1522:prod&dbAccount=hr&dbPassword=hr
+?dbType=11&jdbcUrl=jdbc:oracle:thin:@192.168.10.110:1522:prod&dbAccount=hr&dbPassword=hr&version=5
 ```
 ## Response
 |항목|값(예시)|타입|설명|
