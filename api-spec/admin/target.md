@@ -20,6 +20,7 @@ DB 데이터 변경 요청서 변경 대상(DB)을 모두 조회 합니다.
 |dbAccount|scott|String|DB 계정명|
 |dbCharacterSet||String|DB 캐릭터 셋<br>강제 인코딩 용|
 |changeCharacterSet||String|변경 캐릭터 셋<br>강제 인코딩 용|
+|version|5|String|변경 대상 버전|
 |jdbcUrl|jdbc:oracle:thin:@192.168.10.110:1522:PROD|String|JDBC URL|
 |message||String|결과 메시지|
 ```json
@@ -36,6 +37,7 @@ DB 데이터 변경 요청서 변경 대상(DB)을 모두 조회 합니다.
                 "dbAccount": "scott",
                 "dbCharacterSet": "",
                 "signCharacterSet": "",
+                "version": "5",
                 "jdbcUrl": "jdbc:oracle:thin:@192.168.10.110:1522:PROD"
             }
         ]
@@ -60,6 +62,7 @@ DB 데이터 변경 요청서 변경 대상을 추가합니다.
 |*dbPassword|hr|String|DB 비밀번호<br>저장 시 암호화|
 |dbCharacterSet||String|DB 캐릭터 셋<br>강제 인코딩 용|
 |signCharacterSet||String|SIGN 캐릭터 셋<br>강제 인코딩 용|
+|version|5|String|변경 대상 버전|
 |*jdbcUrl|jdbc:oracle:thin:@1.1.1.1:1521:ora10r2|String|JDBC URL|
 ```json
 {
