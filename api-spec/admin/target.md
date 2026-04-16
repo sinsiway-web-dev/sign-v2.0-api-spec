@@ -141,7 +141,6 @@ DB 데이터 변경 요청서 전체 변경 대상을 삭제합니다.
 }
 ```
 
-
 # 변경 대상 비밀번호 확인
 입력한 비밀번호가 DB 데이터 변경 대상의 접속 비밀번호가 맞는지 확인합니다. 변경 대상이 없거나 비밀번호가 올바르지 않은 경우 code 500으로 DB에서 전달 받은 에러 메시지를 message로 응답합니다.
 ## URL
@@ -170,26 +169,27 @@ DB 데이터 변경 요청서 전체 변경 대상을 삭제합니다.
 }
 ```
 
-
-# 변경 대상 비밀번호 변경
-관리자 권한을 갖고 있는 사용자가 DB 데이터 변경 요청서 변경 대상 비밀번호를 변경합니다.
+# 변경 대상 수정
+DB 데이터 변경 요청서 변경 대상을 추가합니다.
 ## URL
-* /api/sign/doc/dataModify/target/password
+* /api/sign/doc/dataModify/target
 * PUT
 * application/json;charset=UTF-8
 ## Request
 |항목|값(예시)|타입|설명|
 |---|---|---|---|
-|*orgUid|sa|String|관리자 ID|
-|*dataModifyTargetId|119|String|변경 대상 ID|
-|*dbPassword|hr|String|DB 비밀번호|
-|*newDbPassword|hr|String|새 DB 비밀번호|
+|*dbPassword|hr|String|DB 비밀번호<br>저장 시 암호화|
+|dbCharacterSet||String|DB 캐릭터 셋<br>강제 인코딩 용|
+|signCharacterSet||String|SIGN 캐릭터 셋<br>강제 인코딩 용|
+|version|5|String|변경 대상 버전|
+|*jdbcUrl|jdbc:oracle:thin:@1.1.1.1:1521:ora10r2|String|JDBC URL|
 ```json
 {
-    "orgUid": "sa",
-    "dataModifyTargetId": "119",
     "dbPassword": "hr",
-    "newDbPassword": "hr"
+    "version": "21",
+    "dbCharacterSet": "",
+    "signCharacterSet": "",
+    "jdbcUrl": "jdbc:oracle:thin:@192.168.10.110:1522:prod"
 }
 ```
 ## Response
