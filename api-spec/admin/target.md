@@ -178,6 +178,7 @@ DB 데이터 변경 요청서 변경 대상을 수정합니다.
 ## Request
 |항목|값(예시)|타입|설명|
 |---|---|---|---|
+|*dataModifyTargetId|121|int|변경 대상 ID|
 |*dbPassword|hr|String|DB 비밀번호<br>저장 시 암호화|
 |dbCharacterSet||String|DB 캐릭터 셋<br>강제 인코딩 용|
 |signCharacterSet||String|SIGN 캐릭터 셋<br>강제 인코딩 용|
@@ -185,7 +186,8 @@ DB 데이터 변경 요청서 변경 대상을 수정합니다.
 |*jdbcUrl|jdbc:oracle:thin:@1.1.1.1:1521:ora10r2|String|JDBC URL|
 ```json
 {
-    "dbPassword": "hr",
+    "dataModifyTargetId" : "121",
+    "dbPassword": "tiger",
     "version": "21",
     "dbCharacterSet": "",
     "signCharacterSet": "",
