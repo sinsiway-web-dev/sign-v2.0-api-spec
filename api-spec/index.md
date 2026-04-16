@@ -106,7 +106,7 @@
 |[변경 대상 추가](./admin/target.md/#변경-대상-추가)|/api/sign/doc/dataModify/target|POST|변경 대상 추가 버튼|
 |[변경 대상 삭제](./admin/target.md/#변경-대상-삭제)|/api/sign/doc/dataModify/target|DELETE|변경 대상 삭제 버튼|
 |[변경 대상 전체 삭제](./admin/target.md/#변경-대상-전체-삭제)|/api/sign/doc/dataModify/target/all|DELETE|-|
-|[변경 대상 비밀번호 변경](./admin/target.md/#변경-대상-비밀번호-변경)|/api/sign/doc/dataModify/target/password|PUT|변경 대상 수정 - 비밀번호 수정|
+|[변경 대상 수정](./admin/target.md/#변경-대상-수정)|/api/sign/doc/dataModify/target|PUT|변경 대상 수정|
 |[변경 대상 비밀번호 확인](./admin/target.md/#변경-대상-비밀번호-확인)|/api/sign/doc/dataModify/target/password|GET|변경 대상 수정 - 기존 비밀번호 확인|
 |[JDBC - 연결 테스트](./etc/jdbc.md/#JDBC---연결-테스트)|/api/sign/jdbc/connectionTest|GET|변경 대상 TEST CONNECTION 버튼|
 ## 역할
