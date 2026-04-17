@@ -109,6 +109,7 @@
 |[변경 대상 수정](./admin/target.md/#변경-대상-수정)|/api/sign/doc/dataModify/target|PUT|변경 대상 수정|
 |[변경 대상 비밀번호 확인](./admin/target.md/#변경-대상-비밀번호-확인)|/api/sign/doc/dataModify/target/password|GET|변경 대상 수정 - 기존 비밀번호 확인|
 |[JDBC - 연결 테스트](./etc/jdbc.md/#JDBC---연결-테스트)|/api/sign/jdbc/connectionTest|GET|변경 대상 TEST CONNECTION 버튼|
+|[JDBC - 드라이버 확인](./etc/jdbc.md/#JDBC---드라이버-확인)|/api/sign/jdbc/driver|GET||
 ## 역할
 |API|URL|HTTP Method|View|
 |---|---|---|---|
